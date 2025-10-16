@@ -16,7 +16,7 @@ const SmashThatLike = forwardRef<SVGSVGElement, SmashThatLikeProps>(
         width={size}
         height={size}
         viewBox="0 0 901.58038 831.97314"
-        className="STL"
+        className="STL max-w-screen"
         ref={ref}
         xmlns="http://www.w3.org/2000/svg">
         <defs

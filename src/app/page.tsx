@@ -51,12 +51,17 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <SmashThatLike ref={smashRef} size="400" color={textColor}/>
+      <div className="max-w-screen">
+        <SmashThatLike ref={smashRef} size="400" color={textColor}/>
+      </div>
       <button
         onTouchStart={smashLike}
         onMouseDown={smashLike}
         onMouseUp={reset}
         onMouseLeave={reset}
+        onTouchEnd={reset}
+        onTouchCancel={reset}
+        onTouchMove={reset}
         className="thumb-btn w-min cursor-pointer thumb transition-transform duration-300 hover:scale-110 active:scale-80">
         <ThumbLike16Regular size="100"/>
       </button>
